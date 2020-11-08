@@ -8,11 +8,12 @@ on:
 
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ${{ matrix.os }}
 
     strategy:
       matrix:
-        deno: ["v1.x", "nightly"]
+        deno: ["v1.x"]
+        os: [ubuntu-latest]
 
     steps:
       - name: Setup repo
