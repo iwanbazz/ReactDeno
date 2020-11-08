@@ -24,7 +24,7 @@ jobs:
           deno-version: ${{ matrix.deno }}
 
       - name: Install aleph
-        run: deno install -A -f -n aleph https://deno.land/x/aleph@v0.2.24/cli.ts && which aleph
+        run: deno install -A -f -n aleph https://deno.land/x/aleph@v0.2.24/cli.ts
 
       - name: Run Build Test
-        run: aleph build
+        run: /home/runner/.deno/bin/aleph build
