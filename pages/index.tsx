@@ -1,4 +1,4 @@
-import { Import, useDeno } from 'https://deno.land/x/aleph/mod.ts'
+import { Import, useDeno } from 'aleph'
 import React, { useState } from 'react'
 import Logo from '../components/logo.tsx'
 

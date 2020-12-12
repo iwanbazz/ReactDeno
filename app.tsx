@@ -1,5 +1,5 @@
 import React, { ComponentType } from 'react'
-import { Head, SEO, Viewport } from 'https://deno.land/x/aleph/mod.ts'
+import { Head, SEO, Viewport } from 'aleph'
 
 export default function App({ Page, pageProps }: { Page: ComponentType<any>, pageProps: any }) {
     return (
@@ -16,7 +16,7 @@ export default function App({ Page, pageProps }: { Page: ComponentType<any>, pag
                 maximumScale={1.0}
             />
             <Head>
-                <title>Hello World - Aleph.js</title>
+                <title>React Deno - Aleph.js</title>
             </Head>
             <Page {...pageProps} />
         </>
