@@ -1,24 +1,13 @@
-import React, { ComponentType } from 'react'
-import { Head, SEO, Viewport } from 'aleph'
+import type { ComponentType } from 'react'
+import React from 'react'
 
 export default function App({ Page, pageProps }: { Page: ComponentType<any>, pageProps: any }) {
-    return (
-        <>
-            <SEO
-                title="React"
-                description="React framework in deno"
-                keywords="react,framework,deno,alephjs"
-            />
-            <Viewport
-                width="device-width"
-                initialScale={1.0}
-                minimumScale={1.0}
-                maximumScale={1.0}
-            />
-            <Head>
-                <title>React Deno - Aleph.js</title>
-            </Head>
-            <Page {...pageProps} />
-        </>
-    )
+  return (
+    <main>
+      <head>
+        <title>Hello World - Aleph.js</title>
+      </head>
+      <Page {...pageProps} />
+    </main>
+  )
 }
